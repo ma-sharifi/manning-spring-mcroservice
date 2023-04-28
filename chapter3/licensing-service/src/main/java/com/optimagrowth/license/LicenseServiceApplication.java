@@ -16,18 +16,6 @@ public class LicenseServiceApplication {
 		SpringApplication.run(LicenseServiceApplication.class, args);
 	}
 
-	@Bean
-	public LocaleResolver localeResolver() {
-		SessionLocaleResolver localeResolver = new SessionLocaleResolver();
-		localeResolver.setDefaultLocale(Locale.US);
-		return localeResolver;
-	}
-	@Bean
-	public ResourceBundleMessageSource messageSource() {
-		ResourceBundleMessageSource messageSource = new ResourceBundleMessageSource();
-		messageSource.setUseCodeAsDefaultMessage(true);
-		messageSource.setBasenames("messages");
-		return messageSource;
-	}
+
 
 }
